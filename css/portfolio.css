@@ -1,0 +1,19 @@
+/* Проджект фільтр кнопки */
+.projekt-button {
+  color: var(--title-text-color);
+  background-color: var(--buttom-gray-color);
+}
+.projekt-filter .projekt-button:hover,
+.projekt-filter .projekt-button:focus {
+  color: var(--white-color);
+  background-color: var(--buttom-blue-color);
+}
+
+/* Проекти */
+.projekt-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}

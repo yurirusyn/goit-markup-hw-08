@@ -1,0 +1,96 @@
+/* Колір основного тексту  #212121; */
+/* Колір вториного тексту  #757575; */
+/* Колір синього тексту    #2196F3; */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --buttom-blue-color: #2196f3;
+  --white-color: #ffffff;
+  --buttom-gray-color: #f5f4fa;
+  --black-color: #2f303a;
+  --logo-black-color: #000000;
+}
+
+body {
+  background-color: var(--white-color);
+  color: var(--primary-text-color);
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+.list {
+  list-style: none;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.site-nav .link.current {
+  color: var(--buttom-blue-color);
+}
+/* Шапка сайта */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--buttom-blue-color);
+  text-decoration: none;
+}
+
+.site-nav a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.auth-nav a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.logo-header {
+  color: var(--logo-black-color);
+}
+.site-nav .link {
+  color: #212121;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--buttom-blue-color);
+}
+
+.auth-nav .nav-link {
+  color: var(--primary-text-color);
+}
+.auth-nav .nav-link:hover,
+.auth-nav .nav-link:focus {
+  color: var(--buttom-blue-color);
+}
+
+/* Подвал */
+.footer {
+  background-color: var(--black-color);
+  width: 1600px;
+}
+.logo-footer {
+  color: var(--white-color);
+}
+.foooter-nav {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.footer .foooter-nav:hover,
+.footer .foooter-nav:focus {
+  color: var(--buttom-blue-color);
+}
+.adress {
+  color: var(--white-color);
+}

@@ -1,0 +1,53 @@
+.section-title {
+  color: var(--title-text-color);
+}
+/* Кнопака */
+
+.button {
+  color: var(--white-color);
+  background-color: var(--buttom-blue-color);
+}
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* Герой */
+.hero {
+  background-color: var(--black-color);
+  width: 1600px;
+}
+.hero-title {
+  font-family: Roboto Black;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white-color);
+}
+
+/* Особливості */
+.section-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--black-color);
+}
+.section-text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+/* Імя секції */
+
+.section-name {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--black-color);
+}
