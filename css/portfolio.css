@@ -1,5 +1,12 @@
 /* Проджект фільтр кнопки */
 .projekt-button {
+  font-family: Roboto;
+  font-style: 400;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
   color: var(--title-text-color);
   background-color: var(--buttom-gray-color);
 }
