@@ -3,6 +3,10 @@
 .button {
   color: var(--white-color);
   background-color: var(--buttom-blue-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
 }
 .section-title {
   color: var(--title-text-color);
