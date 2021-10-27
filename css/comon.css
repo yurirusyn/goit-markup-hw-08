@@ -12,6 +12,24 @@
   --logo-black-color: #000000;
 }
 
+html {
+  box-sizing: border-box;
+}
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 body {
   background-color: var(--white-color);
   color: var(--primary-text-color);
@@ -19,13 +37,28 @@ body {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.03em;
+  margin: 0;
 }
+.holder {
+  display: none;
+}
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 2px solid tomato; */
+}
+
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 button {
   font-family: inherit;
   cursor: pointer;
+  border: none;
 }
 
 .site-nav .link.current {
@@ -40,6 +73,20 @@ button {
   line-height: 1.19;
   color: var(--buttom-blue-color);
   text-decoration: none;
+  margin-right: 74px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .site-nav a {
@@ -49,19 +96,31 @@ button {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .auth-nav a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+.auth-nav .nav-link {
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 .logo-header {
   color: var(--logo-black-color);
 }
 .site-nav .link {
   color: #212121;
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--buttom-blue-color);
@@ -69,7 +128,20 @@ button {
 
 .auth-nav .nav-link {
   color: var(--primary-text-color);
+  display: block;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
+
+.auth-nav .auth-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+
 .auth-nav .nav-link:hover,
 .auth-nav .nav-link:focus {
   color: var(--buttom-blue-color);
@@ -78,7 +150,7 @@ button {
 /* Подвал */
 .footer {
   background-color: var(--black-color);
-  width: 1600px;
+  /* padding-top: 60px; */
 }
 .logo-footer {
   color: var(--white-color);
@@ -86,6 +158,12 @@ button {
 .foooter-nav {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  margin-top: 9px;
+  display: flex;
+}
+
+.foooter-nav:last-child {
+  padding-bottom: 60px;
 }
 
 .footer .foooter-nav:hover,
@@ -102,4 +180,13 @@ button {
 
 .adress {
   color: var(--white-color);
+  margin-left: 0%;
+  padding-top: 20px;
+}
+
+/* .footer-pading {
+  margin-top: 60px;
+} */
+.footer-container {
+  padding-top: 60px;
 }
