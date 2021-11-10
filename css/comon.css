@@ -76,6 +76,10 @@ button {
   margin-right: 74px;
 }
 
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
 .header-nav {
   display: flex;
   align-items: center;
@@ -151,6 +155,7 @@ button {
 .footer {
   background-color: var(--black-color);
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-footer {
   color: var(--white-color);
@@ -160,10 +165,6 @@ button {
   text-decoration: none;
   margin-top: 9px;
   display: flex;
-}
-
-.foooter-nav:last-child {
-  padding-bottom: 60px;
 }
 
 .footer .foooter-nav:hover,

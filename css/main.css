@@ -22,7 +22,7 @@
   /* width: 1600px; */
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 280px;
+  padding-bottom: 200px;
 }
 .hero-title {
   font-size: 44px;
@@ -51,7 +51,10 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+.section-features {
   padding-top: 94px;
+  padding-bottom: 47px;
 }
 .section-text {
   font-size: 14px;
@@ -69,13 +72,9 @@
 .we-doing-list .we-doing:not(:last-child) {
   margin-right: 30px;
 }
-/* .we-doing {
-  padding-top: 56px;
-  padding-bottom: 94px;
-} */
 
 .we-doing-name {
-  padding-top: 88px;
+  padding-top: 47px;
 }
 /* Наша команда */
 
@@ -106,8 +105,8 @@
   /* padding-top: 30px;
   padding-bottom: 10px; */
   text-align: center;
-  display: inline-block;
   /* background-color: tomato; */
+  margin-bottom: 10px;
 }
 
 .team-number {
@@ -115,8 +114,8 @@
 }
 .section-color {
   background-color: var(--buttom-gray-color);
-  padding-top: 81px;
-  padding-bottom: 113px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .our-team-text {
   padding-top: 30px;
