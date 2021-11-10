@@ -43,7 +43,7 @@ body {
   display: none;
 }
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -150,7 +150,7 @@ button {
 /* Подвал */
 .footer {
   background-color: var(--black-color);
-  /* padding-top: 60px; */
+  padding-top: 60px;
 }
 .logo-footer {
   color: var(--white-color);
@@ -181,12 +181,5 @@ button {
 .adress {
   color: var(--white-color);
   margin-left: 0%;
-  padding-top: 20px;
-}
-
-/* .footer-pading {
-  margin-top: 60px;
-} */
-.footer-container {
-  padding-top: 60px;
+  margin-top: 20px;
 }

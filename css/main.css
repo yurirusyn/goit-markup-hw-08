@@ -21,9 +21,10 @@
   background-color: var(--black-color);
   /* width: 1600px; */
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 280px;
 }
 .hero-title {
-  font-family: Roboto Black;
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
@@ -50,7 +51,7 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-top: 94px;
+  padding-top: 94px;
 }
 .section-text {
   font-size: 14px;
@@ -62,30 +63,32 @@
 /* Чем мы занимаемся */
 .we-doing-list {
   display: flex;
+  margin-top: 56px;
+  padding-bottom: 94px;
 }
 .we-doing-list .we-doing:not(:last-child) {
   margin-right: 30px;
 }
-.we-doing {
+/* .we-doing {
   padding-top: 56px;
-  padding-bottom: 118px;
-}
+  padding-bottom: 94px;
+} */
 
 .we-doing-name {
-  margin-top: 88px;
+  padding-top: 88px;
 }
 /* Наша команда */
 
 .team-list {
   display: flex;
+  margin-top: 50px;
 }
 .team-list .team-li:not(:last-child) {
   margin-right: 30px;
 }
-.our-team-section {
+/* .our-team-section {
   padding-top: 81px;
-  padding-bottom: 50px;
-}
+} */
 
 .section-name {
   font-weight: 700;
@@ -100,16 +103,22 @@
   font-size: 16px;
   line-height: 1.19;
   color: var(--title-text-color);
-  padding-top: 30px;
-  padding-bottom: 10px;
+  /* padding-top: 30px;
+  padding-bottom: 10px; */
   text-align: center;
+  display: inline-block;
   /* background-color: tomato; */
 }
 
 .team-number {
-  padding-bottom: 113px;
   text-align: center;
 }
 .section-color {
   background-color: var(--buttom-gray-color);
+  padding-top: 81px;
+  padding-bottom: 113px;
+}
+.our-team-text {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
