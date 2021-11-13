@@ -148,6 +148,10 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: var(--buttom-blue-color);
   color: var(--white-color);
 }
+.team-socials-link:hover .team-socials-icon,
+.team-socials-link:focus .team-socials-icon {
+  fill: var(--white-color);
+}
 
 .team-li {
   background: #ffffff;
@@ -208,9 +212,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   width: 170px;
   height: 92px;
   margin-right: 30px;
-  border: 1px solid #afb1b8;
+  /* border: 1px solid #afb1b8;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 4px; */
 }
 .custumers-link {
   width: 100%;
@@ -219,20 +223,25 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   align-items: center;
   justify-content: center;
   color: var(--primary-text-color);
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
 }
 .custumers-icon {
   width: 160px;
   height: 60px;
   fill: #AFB1B8;
 }
-.custumers-icon:hover,
-.custumers-icon:focus {
-  fill: var(--buttom-blue-color);
-}
-.custumers-item:hover,
-.custumers-item:focus {
+
+.custumers-link:hover,
+.custumers-link:focus {
   border: 1px solid var(--buttom-blue-color);
 }
+.custumers-link:hover .custumers-icon,
+.custumers-link:focus .custumers-icon {
+  fill: var(--buttom-blue-color)
+}
+
 .customers {
   font-weight: 700;
   font-size: 36px;
