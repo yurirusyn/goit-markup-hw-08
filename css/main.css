@@ -11,6 +11,7 @@
   padding: 10px 32px;
   min-width: 200px;
   margin-top: 28px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-title {
   color: var(--title-text-color);
@@ -104,6 +105,46 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Чем мы занимаемся */
+
+.we-doing {
+  position: relative;
+}
+
+.we-doing-div {
+  display: flex;
+  position: relative;
+}
+
+.we-doing-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  /* transform: translate(-50%, -50%); */
+  /* padding: 27px 85px; */
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+background-color: rgba(47, 48, 58, 0.8);;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+}
+
+
+
 .we-doing-list {
   display: flex;
   margin-top: 56px;
@@ -136,11 +177,19 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   align-items: center;
   justify-content: center;
   color: var(--primary-text-color);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .team-socials-icon {
   width: 20px;
   height: 20px;
   fill: #AFB1B8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .team-socials-link:hover,
@@ -225,11 +274,19 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 .custumers-icon {
   width: 160px;
   height: 60px;
   fill: #AFB1B8;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0;
 }
 
 .custumers-link:hover,

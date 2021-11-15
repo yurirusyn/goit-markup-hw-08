@@ -24,7 +24,7 @@
           >
 
           <ul class="site-nav list">
-            <li class="item"><a href="" class="link current">Студия</a></li>
+            <li class="item"><a href="" class="link header-line">Студия</a></li>
             <li class="item">
               <a href="./portfolio.html" class="link">Портфолио</a>
             </li>
@@ -55,7 +55,7 @@
             Эффективные решения <br />для вашего бизнеса
           </h1>
 
-          <button type="button" class="button">Заказать услугу</button>
+          <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </section>
       </div>
       <!--Особливості-->
@@ -105,22 +105,34 @@
         <div class="container">
           <h2 class="section-name we-doing-name">Чем мы занимаемся</h2>
           <ul class="list we-doing-list">
+            
             <li class="we-doing">
+              <div class="we-doing-div">
               <img src="./images/box1.jpg" alt="Дизайн сайтов" width="370" />
+              <p class="we-doing-text">Десктопные приложения</p>
+              </div>
             </li>
+            
             <li class="we-doing">
+              <div class="we-doing-div">
               <img
                 src="./images/box2.jpg"
                 alt="Дизайн мобильных приложений"
                 width="370"
               />
+              <p class="we-doing-text">Мобильные приложения</p>
+              </div>
             </li>
+          
             <li class="we-doing">
+              <div class="we-doing-div">
               <img
                 src="./images/box3.jpg"
                 alt="Дизайн мобильных приложений для планшетов"
                 width="370"
               />
+              <p class="we-doing-text">Дизайнерские решения</p>
+              
             </li>
           </ul>
         </div>
@@ -412,5 +424,14 @@
         </div>
       </div>
     </footer>
+ <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="close-btn" data-modal-close>
+                    X
+                </button>
+            </div>
+        </div>
+        <script src="./modal.js"></script>
+
   </body>
 </html>
