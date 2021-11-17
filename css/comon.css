@@ -421,7 +421,7 @@ justify-content: center;
 .modal-input {
   font-size: 14px;
   line-height: 1.14;
-  color: rgba(117, 117, 117, 0.5);
+  color: var(--black-color);
 }
 
 .modal-input {
