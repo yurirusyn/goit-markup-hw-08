@@ -9,14 +9,12 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/modern-normalize.css" />
-    <link rel="stylesheet" href="./css/comon.css" />
-    <link rel="stylesheet" href="./css/portfolio.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
 
   <body>
     <!---Шапка сайта-->
-    <header class="header">
+    <header>
       <div class="header-nav container">
         <nav class="header-nav">
           <a href="./index.html" class="logo"
@@ -24,25 +22,31 @@
           >
 
           <ul class="site-nav list">
-            <li class="item"><a href="./index.html" class="link">Студия</a></li>
-            <li class="item">
-              <a href="./portfolio.html" class="link header-line">Портфолио</a>
+            <li class="site-nav_item">
+              <a href="./index.html" class="site-nav_link">Студия</a>
             </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
+            <li class="site-nav_item">
+              <a href="./portfolio.html" class="site-nav_link header-line"
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-nav_item">
+              <a href="" class="site-nav_link">Контакты</a>
+            </li>
           </ul>
         </nav>
 
         <ul class="auth-nav list">
-          <li class="auth-item">
-            <a href="mailto:info@devstudio.com" class="nav-link"
-              ><svg class="header-mail-icon">
+          <li class="auth-nav_item">
+            <a href="mailto:info@devstudio.com" class="auth-nav_link"
+              ><svg width="16" height="12" class="auth-nav_icon">
                 <use href="./images/sprite.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
           </li>
-          <li class="auth-item">
-            <a href="tel:+380961111111" class="nav-link"
-              ><svg class="smartphone-mail-icon">
+          <li class="auth-nav_item">
+            <a href="tel:+380961111111" class="auth-nav_link"
+              ><svg width="10" height="16" class="auth-nav_icon">
                 <use href="./images/sprite.svg#icon-smartphone"></use></svg
               >+38 096 111 11 11</a
             >
@@ -54,7 +58,7 @@
     <main>
       <section class="section-portfolio">
         <div class="container">
-          <h1 class="holder">Портфолио</h1>
+          <h1 class="visually-hidden">Портфолио</h1>
 
           <ul class="projekt-filter list">
             <li class="projekt-list">
@@ -315,7 +319,7 @@
             <input type="email" name="email" class="email-input" placeholder="E-mail" />
           </label>
     
-          <button type="submit" class="footer-botton">
+          <button type="submit" class="button flex-center">
           </svg><span class="subtatlle-span">Подписаться</span><svg class="footer-icon-seand" width="24" height="24">
             <use href="./images/sprite.svg#icon-icon-send"></use></button>
           

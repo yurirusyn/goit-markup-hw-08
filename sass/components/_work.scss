@@ -1,0 +1,47 @@
+.we-doing {
+  position: relative;
+}
+
+.we-doing-div {
+  display: flex;
+  position: relative;
+}
+
+.we-doing-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.we-doing-list {
+  display: flex;
+  margin-top: 56px;
+  padding-bottom: 94px;
+}
+.we-doing-list .we-doing:not(:last-child) {
+  margin-right: 30px;
+}
+
+.we-doing-name {
+  padding-top: 47px;
+  margin-bottom: 50px;
+}
