@@ -16,7 +16,7 @@
         "../sass/components/_features.scss",
         "../sass/components/_work.scss",
         "../sass/components/_team.scss",
-        "../sass/components/_clients.scss",
+        "../sass/components/_custumers.scss",
         "../sass/components/_filters.scss",
         "../sass/components/_projects.scss"
     ],
