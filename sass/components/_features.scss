@@ -1,8 +1,31 @@
-.section-title {
+.features {
+  padding-top: 94px;
+  padding-bottom: 47px;
+  display: flex;
+  justify-content: center;
+}
+
+.features__list {
+  display: flex;
+  justify-content: center;
+}
+
+.features__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
   color: var(--title-text-color);
 }
 
-.features-list::before {
+.features__text {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+}
+
+.features__item::before {
   display: block;
   content: "";
   height: 120px;
@@ -14,40 +37,19 @@
   background-color: #f5f4fa;
   margin-bottom: 30px;
 }
-.icon-antenna::before {
+.features__icon-antenna::before {
   background-image: url(../images/antenna.svg);
 }
-.icon-clock::before {
+.features__icon-clock::before {
   background-image: url(../images/clock.svg);
 }
-.icon-diagram::before {
+.features__icon-diagram::before {
   background-image: url(../images/diagram.svg);
 }
-.icon-astronaut::before {
+.features__icon-astronaut::before {
   background-image: url(../images/astronaut.svg);
 }
 
-.features {
-  display: flex;
-  justify-content: center;
-}
-
-.features .features-list:not(:last-child) {
+.features__item:not(:last-child) {
   margin-right: 30px;
-}
-.section-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-.section-features {
-  padding-top: 94px;
-  padding-bottom: 47px;
-}
-.section-text {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  margin-top: 10px;
 }
