@@ -14,7 +14,7 @@
 
   <body>
     <!---Шапка сайта-->
-    <!-- <header>
+    <header>
       <div class="header-nav container">
         <nav class="header-nav">
           <a href="./index.html" class="logo"
@@ -22,11 +22,15 @@
           >
 
           <ul class="site-nav list">
-            <li class="site-nav_item"><a href="" class="site-nav_link header-line">Студия</a></li>
+            <li class="site-nav_item">
+              <a href="" class="site-nav_link header-line">Студия</a>
+            </li>
             <li class="site-nav_item">
               <a href="./portfolio.html" class="site-nav_link">Портфолио</a>
             </li>
-            <li class="site-nav_item"><a href="" class="site-nav_link">Контакты</a></li>
+            <li class="site-nav_item">
+              <a href="" class="site-nav_link">Контакты</a>
+            </li>
           </ul>
         </nav>
 
@@ -46,13 +50,52 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open">
+           <svg class="icon-menu" width="40" height="40">
+                  <use href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+          </svg>
+        </button>
       </div>
-    </header> -->
+ <div class="mob-menu is-hidden">
+      <div class="mod-close">
+        <button type="button" class="menu-close">
+           <svg class="icon-menu" width="40" height="40">
+                  <use href="./images/sprite.svg#icon-cmenu-close"></use>
+                </svg>
+          </svg>
+        </button>
+      </div>
+     
+<ul class="mob-menu-list list">
+  <li class="mob-meni-item"><a href="./index.html" class="mob-menu-link link">Студия</a></li>
+  <li class="mob-meni-item"><a href="./portfolio.html" class="mob-menu-link link">Портфолио</a></li>
+  <li class="mob-meni-item"><a class="mob-menu-link link">Контакты</a></li>
+</ul>
+
+
+<div class="menu-bottom">
+<ul class="mob-auth-list list">
+  <li class="mob-auth-item"><a href="tel:+380961111111" class="mob-menu-tel">+38 096 111 11 11</a></li>
+  <li class="mob-auth-item"><a href="mailto:info@devstudio.com" class="mob-menu-mail">info@devstudio.com</a></li>
+</ul>
+
+<ul class="mob-social-list list">
+  <li class="mob-social-item"><a href="" class="mob-social-link link">Instagram</a></li>
+  <li class="mob-social-item"><a href="" class="mob-social-link link">Twitter</a></li>
+  <li class="mob-social-item"><a href="" class="mob-social-link link">Facebook</a></li>
+  <li class="mob-social-item"><a href="" class="mob-social-link link">LinkedIn</a></li>
+</ul>
+</div>
+</div>
+      
+</header>
+
 
     <!--Герой-->
     <main>
-      <!-- <div class="backgraund">
-        <section class="hero">
+      <section class="hero backgraund">
+        <div class="container">
           <h1 class="hero_title">
             Эффективные решения <br />для вашего бизнеса
           </h1>
@@ -60,11 +103,12 @@
           <button type="button" class="button" data-modal-open>
             Заказать услугу
           </button>
-        </section>
-      </div> -->
+        </div>
+      </section>
+
       <!--Особливості-->
 
-      <section class="section features">
+      <!-- <section class="section features">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="list features__list">
@@ -100,11 +144,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--Чем мы занимаемся-->
-<!-- 
-      <section>
+
+      <!-- <section>
         <div class="container">
           <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="list work__list">
@@ -142,7 +186,7 @@
 
       <!--Наша команда-->
 
-      <section class="section section-color">
+      <!-- <section class="section section-color">
         <div class="container">
           <h2 class="section-name our-team-section">Наша команда</h2>
           <ul class="list team-list">
@@ -318,11 +362,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Постоянные клиенты -->
 
-      <section class="customers">
+      <!-- <section class="customers">
         <div class="container">
           <h2 class="customers__title">Постоянные клиенты</h2>
 
@@ -371,12 +415,12 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Подвал -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="footer-conteyner-2 container">
         <div class="footer-container">
           <a href="./index.html" class="logo"
@@ -440,7 +484,7 @@
         </form>
       </div>
       </div>
-    </footer>
+    </footer>  -->
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -529,5 +573,6 @@
       </div>
     </div>
     <script src="./modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
