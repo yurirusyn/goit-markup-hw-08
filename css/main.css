@@ -1037,6 +1037,13 @@ link {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero_div {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
+
 .hero_title {
   font-size: 26px;
   font-weight: 900;
@@ -1056,7 +1063,6 @@ link {
 .backgraund {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/overlay-mob-1x.jpg");
   max-width: 768px;
-  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
@@ -1075,7 +1081,6 @@ link {
   .backgraund {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/overlay-tablet-1x.jpg");
     max-width: 768px;
-    height: 400px;
   }
 }
 
@@ -1088,7 +1093,6 @@ link {
 @media screen and (min-width: 1200px) {
   .backgraund {
     max-width: 1600px;
-    height: 400px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/overlay-desktop-1x.jpg");
   }
 }
