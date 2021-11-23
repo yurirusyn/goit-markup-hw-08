@@ -541,13 +541,14 @@ link {
 }
 
 .mob-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background-color: white;
   width: 100vw;
   height: 100vh;
   padding: 40px 48px;
+  z-index: 10;
 }
 
 .menu-close {
@@ -1041,7 +1042,7 @@ link {
 }
 
 .backgraund {
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/overlay-mob-1x.jpg");
   max-width: 768px;
   height: 400px;
   margin-left: auto;
@@ -1051,10 +1052,24 @@ link {
   background-color: var(--black-color);
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .backgraund {
+    background-size: cover;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/overlay-desktop-2x.jpg");
+  }
+}
+
 @media screen and (min-width: 480px) {
   .backgraund {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/overlay-tablet-1x.jpg");
     max-width: 768px;
     height: 400px;
+  }
+}
+
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 192dpi), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .backgraund {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/overlay-tablet-2x.jpg");
   }
 }
 
@@ -1062,6 +1077,13 @@ link {
   .backgraund {
     max-width: 1600px;
     height: 400px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/overlay-desktop-1x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .backgraund {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/overlay-desktop-2x.jpg");
   }
 }
 
@@ -1204,6 +1226,16 @@ link {
   display: flex;
   margin-top: 56px;
   padding-bottom: 94px;
+}
+
+.work {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    display: inline;
+  }
 }
 
 .team-li {

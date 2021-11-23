@@ -107,7 +107,7 @@
 
       <!--Особливості-->
 
-      <!-- <section class="section features">
+      <section class="section features">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="list features__list">
@@ -143,17 +143,24 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Чем мы занимаемся-->
 
-      <!-- <section>
+      <section class="work">
         <div class="container">
           <h2 class="work__title">Чем мы занимаемся</h2>
           <ul class="list work__list">
             <li class="work__item">
               <div class="work__img">
-                <img src="./images/box1.jpg" alt="Дизайн сайтов" width="370" />
+                <img 
+                srcset="./img/directions/img-desktop-1x1.jpg 370w,
+                ./img/directions/img-desktop-2x1.jpg 740w"
+                src="./img/directions/img-desktop-2x1.jpg"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
+                
+                alt="Дизайн сайтов" 
+                />
                 <p class="work__text">Десктопные приложения</p>
               </div>
             </li>
@@ -161,9 +168,13 @@
             <li class="work__item">
               <div class="work__img">
                 <img
-                  src="./images/box2.jpg"
+                srcset="./img/directions/img-desktop-1x2.jpg 370w,
+                ./img/directions/img-desktop-2x2.jpg 740w"
+                src="./img/directions/img-desktop-2x2.jpg"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
+                  
                   alt="Дизайн мобильных приложений"
-                  width="370"
+                 
                 />
                 <p class="work__text">Мобильные приложения</p>
               </div>
@@ -172,28 +183,38 @@
             <li class="work__item">
               <div class="work__img">
                 <img
-                  src="./images/box3.jpg"
+                 srcset="./img/directions/img-desktop-1x3.jpg 370w,
+                ./img/directions/img-desktop-2x3.jpg 740w"
+                src="./img/directions/img-desktop-2x3.jpg"
+                sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
+                  
                   alt="Дизайн мобильных приложений для планшетов"
-                  width="370"
+                  
                 />
                 <p class="work__text">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!--Наша команда-->
 
-      <!-- <section class="section section-color">
+      <section class="section section-color">
         <div class="container">
           <h2 class="section-name our-team-section">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-li">
               <img
-                src="./images/productdesigner.jpg"
-                width="270"
-                height="260"
+                srcset="./img/our-team/img1-desktop-1x.jpg 270w,
+                ./img/our-team/img1-tablet-1x.jpg 354w,
+                ./img/our-team/img1-mob-1x.jpg 450w,
+                ./img/our-team/img1-desktop-2x.jpg 540w,
+                ./img/our-team/img1-tablet-2x.jpg 708w,
+                ./img/our-team/img1-mob-2x.jpg 900w"
+                src="./img/our-team/img1-mob-2x.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
+
                 alt="Дизайнер продуктов"
               />
               <div class="our-team-text">
@@ -234,9 +255,14 @@
 
             <li class="team-li">
               <img
-                src="./images/frontenddeveloper.jpg"
-                width="270"
-                height="260"
+              srcset="./img/our-team/img2-desktop-1x.jpg 270w,
+                ./img/our-team/img2-tablet-1x.jpg 354w,
+                ./img/our-team/img2-mob-1x.jpg 450w,
+                ./img/our-team/img2-desktop-2x.jpg 540w,
+                ./img/our-team/img2-tablet-2x.jpg 708w,
+                ./img/our-team/img2-mob-2x.jpg 900w"
+                src="./img/our-team/img2-mob-2x.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
                 alt="Фронтенд-разработчик"
               />
               <div class="our-team-text">
@@ -277,9 +303,15 @@
 
             <li class="team-li">
               <img
-                src="./images/marketing.jpg"
-                width="270"
-                height="260"
+              srcset="./img/our-team/img3-desktop-1x.jpg 270w,
+                ./img/our-team/img3-tablet-1x.jpg 354w,
+                ./img/our-team/img3-mob-1x.jpg 450w,
+                ./img/our-team/img3-desktop-2x.jpg 540w,
+                ./img/our-team/img3-tablet-2x.jpg 708w,
+                ./img/our-team/img3-mob-2x.jpg 900w"
+                src="./img/our-team/img3-mob-2x.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
+
                 alt="Маркетинг"
               />
               <div class="our-team-text">
@@ -319,9 +351,14 @@
             </li>
             <li class="team-li">
               <img
-                src="./images/uidesigner.jpg"
-                width="270"
-                height="260"
+                 srcset="./img/our-team/img4-desktop-1x.jpg 270w,
+                ./img/our-team/img4-tablet-1x.jpg 354w,
+                ./img/our-team/img4-mob-1x.jpg 450w,
+                ./img/our-team/img4-desktop-2x.jpg 540w,
+                ./img/our-team/img4-tablet-2x.jpg 708w,
+                ./img/our-team/img4-mob-2x.jpg 900w"
+                src="./img/our-team/img4-mob-2x.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
                 alt="UI дизайнер"
               />
               <div class="our-team-text">
@@ -361,11 +398,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Постоянные клиенты -->
 
-      <!-- <section class="customers">
+      <section class="customers">
         <div class="container">
           <h2 class="customers__title">Постоянные клиенты</h2>
 
@@ -414,12 +451,12 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Подвал -->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer-conteyner-2 container">
         <div class="footer-container">
           <a href="./index.html" class="logo"
@@ -483,7 +520,7 @@
         </form>
       </div>
       </div>
-    </footer>  -->
+    </footer> 
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
