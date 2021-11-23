@@ -1,6 +1,10 @@
 .section-portfolio {
   padding-top: 60px;
   padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .container-projekts {
@@ -22,11 +26,15 @@
 .projekts {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: -30px;
 
   @media screen and (min-width: 768px) {
     margin-left: -30px;
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 50px;
   }
 }
 

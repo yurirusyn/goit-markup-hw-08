@@ -20,10 +20,6 @@
   margin-right: 10px;
 }
 
-.header {
-  border-bottom: 1px solid #ececec;
-}
-
 .header-nav {
   display: flex;
   align-items: center;
@@ -76,10 +72,12 @@
     display: flex;
     padding-bottom: 0px;
     padding-top: 0px;
+    margin-top: 10px;
   }
   @media screen and (min-width: 1200px) {
     align-items: center;
     margin-left: 30px;
+    margin-top: 0px;
   }
 }
 
@@ -167,9 +165,6 @@
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #2196f3;
-  @media screen and (min-width: 320px) {
-    font-size: 20px;
-  }
 }
 .mob-menu-mail {
   font-weight: 500;
@@ -220,4 +215,8 @@
 }
 .menu-bottom {
   margin-top: auto;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
 }

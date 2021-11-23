@@ -28,12 +28,14 @@
 // }
 
 .hero {
+  display: flex;
+  align-items: center;
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
   @media screen and (min-width: 1200px) {
-    // padding-top: 200px;
-    // padding-bottom: 200px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 .hero_title {
@@ -43,6 +45,7 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  // text-align: center;
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.36;
