@@ -61,7 +61,7 @@
         <button type="button" class="menu-close">
            <svg class="icon-menu" width="40" height="40">
                   <use href="./images/sprite.svg#icon-cmenu-close"></use>
-                </svg>
+                    </svg>
           </svg>
         </button>
       </div>
@@ -107,7 +107,7 @@
 
       <!--Особливості-->
 
-      <section class="section features">
+     <section class="section features">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="list features__list">
@@ -143,8 +143,7 @@
             </li>
           </ul>
         </div>
-      </section>
-
+      </section> 
       <!--Чем мы занимаемся-->
 
       <section class="work">
@@ -205,18 +204,36 @@
           <h2 class="section-name our-team-section">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-li">
-              <img
-                srcset="./img/our-team/img1-desktop-1x.jpg 270w,
-                ./img/our-team/img1-tablet-1x.jpg 354w,
-                ./img/our-team/img1-mob-1x.jpg 450w,
-                ./img/our-team/img1-desktop-2x.jpg 540w,
-                ./img/our-team/img1-tablet-2x.jpg 708w,
-                ./img/our-team/img1-mob-2x.jpg 900w"
-                src="./img/our-team/img1-mob-2x.jpg"
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
-
-                alt="Дизайнер продуктов"
+              <picture>
+                <source
+            
+                  srcset="
+                      ./img/our-team/img1-desktop-1x.jpg 1x,
+                      ./img/our-team/img1-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
               />
+              <source
+                  srcset="
+                      ./img/our-team/img1-tablet-1x.jpg 1x,
+                      ./img/our-team/img1-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+              />
+              <source
+                  srcset="
+                      ./img/our-team/img1-mob-1x.jpg 1x,
+                      ./img/our-team/img1-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+              />
+              <img
+                  src="./img/our-team/img1-mob-2x.jpg"
+                  alt="UI дизайнер"
+                   width="270"
+                  height="260" 
+              />
+          </picture> 
               <div class="our-team-text">
                 <h3 class="our-team">Игорь Демьяненко</h3>
                 <p class="team-number">Product Designer</p>
@@ -254,17 +271,36 @@
             </li>
 
             <li class="team-li">
-              <img
-              srcset="./img/our-team/img2-desktop-1x.jpg 270w,
-                ./img/our-team/img2-tablet-1x.jpg 354w,
-                ./img/our-team/img2-mob-1x.jpg 450w,
-                ./img/our-team/img2-desktop-2x.jpg 540w,
-                ./img/our-team/img2-tablet-2x.jpg 708w,
-                ./img/our-team/img2-mob-2x.jpg 900w"
-                src="./img/our-team/img2-mob-2x.jpg"
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
-                alt="Фронтенд-разработчик"
+              <picture>
+                <source
+            
+                  srcset="
+                      ./img/our-team/img2-desktop-1x.jpg 1x,
+                      ./img/our-team/img2-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
               />
+              <source
+                  srcset="
+                      ./img/our-team/img2-tablet-1x.jpg 1x,
+                      ./img/our-team/img2-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+              />
+              <source
+                  srcset="
+                      ./img/our-team/img2-mob-1x.jpg 1x,
+                      ./img/our-team/img2-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+              />
+              <img
+                  src="./img/our-team/img2-mob-2x.jpg"
+                  alt="UI дизайнер"
+                   width="270"
+                  height="260" 
+              />
+          </picture> 
               <div class="our-team-text">
                 <h3 class="our-team">Ольга Репина</h3>
                 <p class="team-number">Frontend Developer</p>
@@ -302,18 +338,37 @@
             </li>
 
             <li class="team-li">
-              <img
-              srcset="./img/our-team/img3-desktop-1x.jpg 270w,
-                ./img/our-team/img3-tablet-1x.jpg 354w,
-                ./img/our-team/img3-mob-1x.jpg 450w,
-                ./img/our-team/img3-desktop-2x.jpg 540w,
-                ./img/our-team/img3-tablet-2x.jpg 708w,
-                ./img/our-team/img3-mob-2x.jpg 900w"
-                src="./img/our-team/img3-mob-2x.jpg"
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
 
-                alt="Маркетинг"
+              <picture>
+                <source
+            
+                  srcset="
+                      ./img/our-team/img3-desktop-1x.jpg 1x,
+                      ./img/our-team/img3-desktop-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
               />
+              <source
+                  srcset="
+                      ./img/our-team/img3-tablet-1x.jpg 1x,
+                      ./img/our-team/img3-tablet-2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+              />
+              <source
+                  srcset="
+                      ./img/our-team/img3-mob-1x.jpg 1x,
+                      ./img/our-team/img3-mob-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+              />
+              <img
+                  src="./img/our-team/img3-mob-2x.jpg"
+                  alt="UI дизайнер"
+                   width="270"
+                  height="260" 
+              />
+          </picture> 
               <div class="our-team-text">
                 <h3 class="our-team">Николай Тарасов</h3>
                 <p class="team-number">Marketing</p>
@@ -350,17 +405,37 @@
               </div>
             </li>
             <li class="team-li">
-              <img
-                 srcset="./img/our-team/img4-desktop-1x.jpg 270w,
-                ./img/our-team/img4-tablet-1x.jpg 354w,
-                ./img/our-team/img4-mob-1x.jpg 450w,
-                ./img/our-team/img4-desktop-2x.jpg 540w,
-                ./img/our-team/img4-tablet-2x.jpg 708w,
-                ./img/our-team/img4-mob-2x.jpg 900w"
-                src="./img/our-team/img4-mob-2x.jpg"
-                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px,(min-width: 480px) 450px, 100vw"
-                alt="UI дизайнер"
-              />
+                 <picture>
+                                  <source
+                              
+                                    srcset="
+                                        ./img/our-team/img4-desktop-1x.jpg 1x,
+                                        ./img/our-team/img4-desktop-2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./img/our-team/img4-tablet-1x.jpg 1x,
+                                        ./img/our-team/img4-tablet-2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px) and (max-width: 1199px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./img/our-team/img4-mob-1x.jpg 1x,
+                                        ./img/our-team/img4-mob-2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <img
+                                    src="./img/our-team/img4-mob-2x.jpg"
+                                    alt="UI дизайнер"
+                                    width="270"
+                                    height="260"
+                                />
+                            </picture> 
+          
               <div class="our-team-text">
                 <h3 class="our-team">Михаил Ермаков</h3>
                 <p class="team-number">UI Designer</p>

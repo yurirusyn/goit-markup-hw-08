@@ -64,7 +64,7 @@
       rgba(47, 48, 58, 0.4)
     ),
     url("../img/hero/overlay-mob-1x.jpg");
-  max-width: 768px;
+
   margin-left: auto;
   margin-right: auto;
   background-position: center;
@@ -79,7 +79,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../img/hero/overlay-desktop-2x.jpg");
+      url("../img/hero/overlay-mob-2x.jpg");
   }
   @media screen and (min-width: 480px) {
     background-image: linear-gradient(
@@ -88,7 +88,6 @@
         rgba(47, 48, 58, 0.4)
       ),
       url("../img/hero/overlay-tablet-1x.jpg");
-    max-width: 768px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -102,7 +101,6 @@
     }
   }
   @media screen and (min-width: 1200px) {
-    max-width: 1600px;
     background-image: linear-gradient(
         to right,
         rgba(47, 48, 58, 0.4),

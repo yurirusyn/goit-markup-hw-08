@@ -399,6 +399,7 @@ link {
   height: 4px;
   background-color: var(--buttom-blue-color);
   border-radius: 2px;
+  margin-bottom: -1px;
 }
 
 .site-nav_item {
@@ -857,8 +858,9 @@ link {
 }
 
 .modal {
+  width: 100vh;
   position: absolute;
-  width: 450px;
+  width: 100%;
   height: 630px;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -866,7 +868,14 @@ link {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  padding: 40px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    padding: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1062,7 +1071,6 @@ link {
 
 .backgraund {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/overlay-mob-1x.jpg");
-  max-width: 768px;
   margin-left: auto;
   margin-right: auto;
   background-position: center;
@@ -1073,14 +1081,13 @@ link {
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .backgraund {
     background-size: cover;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/overlay-desktop-2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/overlay-mob-2x.jpg");
   }
 }
 
 @media screen and (min-width: 480px) {
   .backgraund {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/overlay-tablet-1x.jpg");
-    max-width: 768px;
   }
 }
 
@@ -1092,7 +1099,6 @@ link {
 
 @media screen and (min-width: 1200px) {
   .backgraund {
-    max-width: 1600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/overlay-desktop-1x.jpg");
   }
 }
