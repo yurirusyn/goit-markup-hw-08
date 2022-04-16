@@ -737,6 +737,7 @@ link {
 @media screen and (min-width: 1200px) {
   .footer-socials-name {
     margin-top: 0px;
+    text-align: start;
   }
 }
 
